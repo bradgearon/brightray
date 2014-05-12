@@ -156,9 +156,18 @@ net::URLRequestContextGetter*
 void BrowserContext::RequestMIDISysExPermission(
     int render_process_id,
     int render_view_id,
+	int bridge_id,
     const GURL& requesting_frame,
     const MIDISysExPermissionCallback& callback) {
   callback.Run(false);
+}
+
+void BrowserContext::CancelMIDISysExPermissionRequest(
+	int render_process_id,
+	int render_view_id,
+	int bridge_id,
+	const GURL& requesting_frame) {
+	// do nothing
 }
 
 content::ResourceContext* BrowserContext::GetResourceContext() {

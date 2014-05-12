@@ -251,7 +251,8 @@
           4480, # nonstandard extension used: specifying underlying type for enum
           4481, # nonstandard extension used: override specifier 'override'
           4512, # assignment operator could not be generated
-          4702, # unreachable code
+          4702, # unreachable code,
+		  4996, # function was declared deprecated
         ],
       },
     }],
